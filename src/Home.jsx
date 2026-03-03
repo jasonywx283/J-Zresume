@@ -6,23 +6,27 @@ function Home() {
 
   return (
     <Box
-      sx={{
-        minHeight: "100vh",
-        minWidth: "100vw",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        background: "linear-gradient(135deg, #e0f7fa, #fce4ec)",
-        p: 3,
-      }}
-    >
+  sx={(theme) => ({
+    minHeight: "100vh",
+    minWidth: "100vw",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    p: 3,
+    background:
+      theme.palette.mode === "light"
+        ? "linear-gradient(135deg, #e0f7fa, #fce4ec)"
+        : "linear-gradient(135deg, #1e1e1e, #121212)",
+  })}
+>
+
       <Box sx={{ maxWidth: 1000, width: "100%" }}>
         <Typography
           variant="h3"
           textAlign="center"
           gutterBottom
           fontWeight="bold"
-          sx={{ color: "#333", mb: 6 }}
+          sx={{mb: 6 }}
         >
           Welcome to Jason Yong & Zi Yu Resume Portfolio
         </Typography>
