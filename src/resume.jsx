@@ -19,7 +19,7 @@ import profilePhoto from "./assets/profile.jpg";
 
 function Resume() {
   return (
-    <Box sx={{ backgroundColor: "#f5f5f5", py: 5, minHeight: "100vh" }}>
+    <Box sx={{ backgroundColor: "#f5f5f5", py: 5, minHeight: "100vh", minWidth: "100vw" }}>
       <Container maxWidth="md">
         <Paper elevation={6} sx={{ borderRadius: 3, p: { xs: 3, md: 5 } }}>
           {/* Header */}
